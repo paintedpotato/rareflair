@@ -60,10 +60,11 @@
 
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 300;
-            letter-spacing: 0.3em;
+            letter-spacing: 0.2em;
             color: var(--charcoal);
+            white-space: nowrap;
         }
 
         .nav-links {
@@ -117,7 +118,7 @@
 
         .hero h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 7rem;
+            font-size: 5.5rem;
             font-weight: 300;
             letter-spacing: 0.1em;
             margin-bottom: 1rem;
@@ -443,6 +444,11 @@
 
         /* Responsive */
         @media (max-width: 1024px) {
+            .logo {
+                font-size: 1.3rem;
+                letter-spacing: 0.2em;
+            }
+
             .collection-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -463,10 +469,19 @@
         @media (max-width: 768px) {
             nav {
                 padding: 1.5rem 2rem;
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+                letter-spacing: 0.15em;
             }
 
             .nav-links {
                 gap: 1.5rem;
+                font-size: 0.75rem;
             }
 
             .collection-grid {
@@ -498,7 +513,7 @@
 
     <!-- Navigation -->
     <nav>
-        <div class="logo">RARE FLAIR BOUTIQUE</div>
+        <div class="logo">RARE FLAIR</div>
         <ul class="nav-links">
             <li><a href="#collections">COLLECTIONS</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -660,7 +675,7 @@
     <!-- Footer -->
     <footer id="contact">
         <div class="footer-content">
-            <div class="footer-logo">RARE FLAIR BOUTIQUE</div>
+            <div class="footer-logo">RARE FLAIR</div>
             <div class="footer-links">
                 <a href="#collections">COLLECTIONS</a>
                 <a href="#about">ABOUT US</a>
